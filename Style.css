@@ -6,8 +6,6 @@
 
 }
 
-
-
 *{
 font-family: 'Nunito', sans-serif;
 margin:0; padding:0;
@@ -358,24 +356,6 @@ html::-webkit-scrollbar-track{
     z-index: 100;
     display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* media queries  */
 
