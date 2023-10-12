@@ -1,23 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,600;1,300&display=swap');
 
 :root{
-    --yellow:#f9ca24;
-
-
+    --color:#4293a8;
 }
-
 *{
 font-family: 'Nunito', sans-serif;
 margin:0; padding:0;
 box-sizing: border-box;
 text-decoration: none;
 outline: none; border: none;
-text-transform: capitalize;
+/* text-transform: capitalize; */
 transition: all .2s linear;
 
 }
 ::selection{
-    background: var(--yellow);
+    background: var(--color);
     color: #333;
 
 }
@@ -34,13 +31,14 @@ html::-webkit-scrollbar-track{
     background: #233 ;
  }
  html::-webkit-scrollbar-thumb{
-    background:var(--yellow)
- }
+    background:var(--color)
+}
  body{
      background:#111;
      overflow-x: hidden;
      padding-left: 35rem;
- }
+     text-transform: capitalize; 
+}
  section{
      min-height: 100vh;
      padding: 1rem;
@@ -61,7 +59,7 @@ html::-webkit-scrollbar-track{
  }
 
  .btn:hover{
-     background: var(--yellow);
+     background: var(--color);
 
  }
  
@@ -82,10 +80,14 @@ html::-webkit-scrollbar-track{
  header .user img{
      height:17rem;
      width:17rem;
-     border-radius: 50%;
+     border-top-right-radius: 50%;
+     border-top-left-radius: 10%;
+     border-bottom-left-radius: 50%;
+     border-bottom-right-radius: 10%;
+     margin-top: 2.5rem;
      object-fit: cover;
      margin-bottom: 1rem;
-     border: .7rem solid var(--yellow);
+     border: .7rem solid var(--color);
  }
  
  header .user .name{
@@ -116,7 +118,7 @@ html::-webkit-scrollbar-track{
      border-radius: 5rem;
  }
  header .navbar ul li a:hover{
-     background:var(--yellow)
+     background:var(--color)
  }
  
  #menu{
@@ -153,7 +155,7 @@ html::-webkit-scrollbar-track{
 
 }
 .home h1 span{
-    color: var(--yellow);
+    color: var(--color);
 }
 
 .home p{
@@ -161,6 +163,8 @@ html::-webkit-scrollbar-track{
     color:#eee;
     padding: 1rem 0;
 }
+
+
 
 .about .row{
     display: flex;
@@ -178,7 +182,7 @@ html::-webkit-scrollbar-track{
 
 .about .row .info h3{
     font-size: 2rem;
-    color:var(--yellow);
+    color:var(--color);
     padding:1rem 0;
     font-weight: normal;
 }
@@ -205,13 +209,16 @@ html::-webkit-scrollbar-track{
 
 .about .row .counter .box span{
     font-size: 4rem;
-    color:var(--yellow);
+    color:var(--color);
+    
 }
 
 .about .row .counter .box h3{
     font-size: 2rem;
     color:#fff;
 }
+
+
 
 .education .box-container{
     display: flex;
@@ -220,6 +227,7 @@ html::-webkit-scrollbar-track{
     flex-wrap: wrap;
     padding:1rem 0;
     padding-left: 3rem;
+   
 }
 
 .education .box-container .box{
@@ -228,6 +236,7 @@ html::-webkit-scrollbar-track{
     padding-left: 4rem;
     border-left: .2rem solid #fff;
     position: relative;
+    
 }
 
 .education .box-container .box span{
@@ -236,6 +245,7 @@ html::-webkit-scrollbar-track{
     color:#fff;
     border-radius: 5rem;
     padding:.5rem 2.5rem;
+   
 }
 
 .education .box-container .box h3{
@@ -260,7 +270,7 @@ html::-webkit-scrollbar-track{
     text-align: center;
     font-size: 2rem;
     color:#fff;
-    background:var(--yellow);
+    background:var(--color);
 }
 
 .portfolio .box-container{
@@ -269,6 +279,7 @@ html::-webkit-scrollbar-track{
     justify-content: center;
     flex-wrap: wrap;
     padding:2rem 0;
+    border: 1px solid var(--color);
 }
 
 .portfolio .box-container .box{
@@ -278,6 +289,7 @@ html::-webkit-scrollbar-track{
     margin:2rem;
     overflow: hidden;
     cursor: pointer;
+    /* border: 1px solid var(--color); */
 }
 
 .portfolio .box-container .box img{
@@ -347,12 +359,13 @@ html::-webkit-scrollbar-track{
 
 .contact .row .content .info h3 i{
     padding-right: 1rem;
-    color:var(--yellow);
+    color:var(--color);
 }
 
 .top{
     position: fixed;
-    bottom:7.5rem; right: 2rem;
+    bottom:7.5rem;
+    right: 2rem;
     z-index: 100;
     display: none;
 }
